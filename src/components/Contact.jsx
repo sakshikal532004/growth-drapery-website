@@ -120,7 +120,7 @@ export default function Contact() {
                 <div className="info-content">
                   <h3>Instagram</h3>
                   <a
-                    href="https://instagram.com/growth_drapery_and_events"
+                    href="https://www.instagram.com/growth_drapery__and_events?utm_source=qr&stkn=MTI0M29id2c0YnlzMg=="
                     target="_blank"
                     rel="noopener noreferrer"
                   >
