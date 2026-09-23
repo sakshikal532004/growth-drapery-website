@@ -5,12 +5,12 @@ const WesternDance = () => {
   const navigate = useNavigate();
 
   const images = [
-    "/images/western/western 1.jpeg",
-    "/images/western/western 2.jpeg",
-    "/images/western/western 3.jpeg",
-    "/images/western/western 4.jpeg",
-    "/images/western/western 5.jpeg",
-    "/images/western/western 6.jpeg",
+    "/images/western/western 1.png",
+    "/images/western/western 2.png",
+    "/images/western/western 3.png",
+    "/images/western/western 4.png",
+    "/images/western/western 5.png",
+    "/images/western/western 7.png"
   ];
 
   const [current, setCurrent] = useState(0);

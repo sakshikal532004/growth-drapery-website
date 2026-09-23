@@ -1,6 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const About = () => {
+  // 2 Images ka array
+  const aboutImages = [
+    "/images/about 1.png",
+    "/images/about 2.png"
+  ];
+
+  const [currentImg, setCurrentImg] = useState(0);
+
+  // Har 3 second mein image change karne ka logic
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentImg((prev) => (prev === aboutImages.length - 1 ? 0 : prev + 1));
+    }, 3000); // 3000ms = 3 seconds
+    return () => clearInterval(timer);
+  }, [aboutImages.length]);
+
   return (
     <>
       <style>{`
@@ -74,23 +90,31 @@ const About = () => {
           border: 5px solid rgba(26,22,16,0.95);
         }
 
-        .about-image img {
+        /* Slider Images Styling */
+          .about-image img {
+          position: absolute;
+          inset: 0;
           width: 100%;
           height: 100%;
           display: block;
-          object-fit: cover;
-          transition: transform 0.8s ease;
+          object-fit: contain; /* Ab poori image dikhagi, crop nahi hogi */
+          opacity: 0;
+          transform: scale(1.02); /* Scale bhi thoda kam kiya taaki fit aaye */
+          transition: opacity 1.2s ease-in-out, transform 1.5s ease-in-out;
           filter: saturate(0.9) contrast(1.05);
+          background-color: #0e1117; /* Image ke side mein dark background aayega */
         }
-
-        .about-image:hover img {
-          transform: scale(1.05);
+        .about-image img.active {
+          opacity: 1;
+          transform: scale(1);
         }
 
         .about-image-overlay {
           position: absolute;
           inset: 0;
           background: linear-gradient(to top, rgba(10, 12, 16, 0.85) 0%, rgba(10, 12, 16, 0.2) 55%, rgba(10, 12, 16, 0.02) 100%);
+          z-index: 2;
+          pointer-events: none;
         }
 
         .about-image-text {
@@ -99,6 +123,7 @@ const About = () => {
           right: 32px;
           bottom: 32px;
           color: white;
+          z-index: 3;
         }
 
         .about-image-text span {
@@ -137,6 +162,7 @@ const About = () => {
           color: #e8dcc8;
           box-shadow: 0 15px 35px rgba(0,0,0,0.40);
           animation: floatBadge 4s ease-in-out infinite;
+          z-index: 5;
         }
 
         .about-experience strong {
@@ -339,13 +365,17 @@ const About = () => {
         <div className="drapery-line drapery-line-one"></div>
 
         <div className="about-container">
-          {/* LEFT VISUAL */}
+          {/* LEFT VISUAL - Image Slider */}
           <div className="about-visual">
             <div className="about-image">
-              <img
-                src="/images/about.jpeg"
-                alt="Growth Drapery stage costume collection"
-              />
+              {aboutImages.map((img, index) => (
+                <img
+                  key={index}
+                  src={img}
+                  alt={`Growth Drapery About ${index + 1}`}
+                  className={index === currentImg ? "active" : ""}
+                />
+              ))}
               <div className="about-image-overlay"></div>
               <div className="about-image-text">
                 <span>GROWTH DRAPERY</span>

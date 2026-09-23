@@ -15,21 +15,21 @@ export default function Hero() {
       accent: "#c6a452",
     },
     {
-      image: "/images/western/western 1.jpeg",
+      image: "/images/homepage 3.png",
       category: "Western Dance",
       title: "Own the Stage",
       subtitle: "Bold looks designed for energetic performances.",
       accent: "#d4764e",
     },
     {
-      image: "/images/traditional/traditional 1.jpeg",
+      image: "/images/homepage 2.png",
       category: "Traditional & Folk",
       title: "Celebrate Tradition",
       subtitle: "Beautiful costumes for cultural performances.",
       accent: "#6ba58a",
     },
     {
-      image: "/images/events/events 3.jpeg",
+      image: "/images/homepage 4.png",
       category: "Stage & Events",
       title: "Make Your Event Special",
       subtitle: "Performance-ready costumes for every celebration.",
@@ -457,7 +457,8 @@ export default function Hero() {
         }
         .image-card {
           position: relative; width: 100%; height: 100%;
-          overflow: hidden; border-radius: 220px 220px 28px 28px;
+          overflow: hidden; 
+          border-radius: 24px; /* Changed from 220px 220px 28px 28px to make it square */
           background: #1a1610;
           box-shadow:
             0 40px 100px rgba(0,0,0,0.50),
@@ -493,7 +494,7 @@ export default function Hero() {
         /* ---- Fold shadow on wrapper ---- */
         .fold-shadow {
           position: absolute; inset: 0;
-          border-radius: 220px 220px 28px 28px;
+          border-radius: 24px; /* Changed to match square */
           pointer-events: none; z-index: 2;
           transition: opacity 0.4s ease;
         }
@@ -504,7 +505,8 @@ export default function Hero() {
 
         .main-image {
           width: 100%; height: 100%;
-          object-fit: cover; object-position: center; display: block;
+          object-fit: contain; /* Changed from cover to contain so image doesn't cut */
+          object-position: center; display: block;
         }
         .image-gradient {
           position: absolute; inset: 0;
@@ -699,7 +701,7 @@ export default function Hero() {
           .meta-label { font-size: 9px; }
           .hero-visual { width: 100%; height: 520px; }
           .image-card-wrapper { width: min(84vw, 360px); height: 460px; }
-          .image-card { border-radius: 150px 150px 18px 18px; }
+          .image-card { border-radius: 20px; } /* Changed to match square */
           .image-info { left: 22px; right: 22px; bottom: 22px; }
           .image-title { font-size: 22px; }
           .image-subtitle { font-size: 11px; }
@@ -788,7 +790,7 @@ export default function Hero() {
               </div>
               <span className="meta-divider"></span>
               <div className="meta-item">
-                <span className="meta-number">100+</span>
+                <span className="meta-number">500+</span>
                 <span className="meta-label">Costume Styles</span>
               </div>
               <span className="meta-divider"></span>

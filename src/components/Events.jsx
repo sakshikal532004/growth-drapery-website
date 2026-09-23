@@ -8,17 +8,17 @@ const EventsPage = () => {
 
   const images = [
     {
-      src: "https://z-cdn-media.chatglm.cn/files/36d64bf3-2098-4170-8c54-92379f684e09.jpeg?auth_key=1889896364-0a44ed1b79ac40868a03a6497be075d5-0-9bfb37f326491edee2c0a58759170a53",
+      src: "/images/image 1.jpeg",
       title: "Make Your School Events Memorable!",
       subtitle: "Annual Day • Cultural Program • Dance Competition",
     },
     {
-      src: "https://z-cdn-media.chatglm.cn/files/42c2c04b-4c37-49d8-b95d-462f5ea5a220.jpeg?auth_key=1889896364-540cded4844d468082dadd89fd320129-0-7d98120831833e14b26bb1481ec3aa7a",
+      src: "/images/image 2.png",
       title: "Growth Drapery and Events",
       subtitle: "Bringing energy to the stage with perfect costumes.",
     },
     {
-      src: "https://z-cdn-media.chatglm.cn/files/1130d54c-76f4-42e3-85ce-49ca99130348.jpeg?auth_key=1889896364-501602ac129f4c9a9d49476ef5a10486-0-866f930e94b261bc8b2247b2239c5ce5",
+      src: "/images/image 3.jpeg",
       title: "Tradition in Every Step",
       subtitle: "Culture in Every Move. Express | Inspire | Unite.",
     },
@@ -64,15 +64,84 @@ const EventsPage = () => {
         .events-header { position: sticky; top: 0; width: 100%; padding: 18px 6%; background: rgba(14, 17, 23, 0.70); border-bottom: 1px solid rgba(198, 164, 82, 0.15); backdrop-filter: blur(20px) saturate(1.4); z-index: 10; display: flex; justify-content: center; align-items: center; }
         .header-brand span { font-size: 12px; font-weight: 900; letter-spacing: 3px; color: #e8dcc8; }
 
-        .container { max-width: 1250px; margin: 0 auto; padding: 80px 6% 110px; position: relative; z-index: 2; }
+        .container { max-width: 800px; margin: 0 auto; padding: 60px 6% 110px; position: relative; z-index: 2; text-align: center; }
 
-        .hero-text { text-align: center; margin-bottom: 60px; animation: textEnter 0.9s 0.2s cubic-bezier(0.16,1,0.3,1) both; display: flex; flex-direction: column; align-items: center; }
+        /* Image Box - Text ke Niche */
+        .slider-wrapper { 
+          width: 100%; 
+          max-width: 500px; 
+          margin: 0 auto 40px; /* Niche 40px gap */
+          animation: visualEnter 1s 0.3s cubic-bezier(0.16,1,0.3,1) both; 
+        }
+        
+        .slider-image-box { 
+          position: relative; 
+          width: 100%; 
+          aspect-ratio: 1 / 1; 
+          overflow: hidden; 
+          border-radius: 20px; 
+          background: #0e1117; 
+          box-shadow: 0 40px 100px rgba(0,0,0,0.50), 0 0 0 1px rgba(198,164,82,0.08); 
+          border: 3px solid rgba(26,22,16,0.95); 
+        }
+        
+        /* Image proper uper (top) set karne ke liye object-position: top use kiya */
+        .slider-image { 
+          position: absolute; 
+          inset: 0; 
+          width: 100%; 
+          height: 100%; 
+          object-fit: contain; 
+          object-position: top center;
+          opacity: 0; 
+          transform: scale(1.02); 
+          transition: opacity 1s ease, transform 1.2s ease; 
+        }
+        .slider-image.active { opacity: 1; transform: scale(1); }
+        
+        .slider-controls { 
+          position: absolute; 
+          top: 50%; 
+          transform: translateY(-50%); 
+          width: 100%; 
+          display: flex; 
+          justify-content: space-between; 
+          padding: 0 15px; 
+          z-index: 3; 
+          pointer-events: none;
+        }
+        .slider-controls button { 
+          pointer-events: all;
+          width: 40px; 
+          height: 40px; 
+          border: 1px solid rgba(198, 164, 82, 0.30); 
+          border-radius: 50%; 
+          background: rgba(14, 17, 23, 0.80); 
+          color: #c6a452; 
+          font-size: 16px; 
+          cursor: pointer; 
+          backdrop-filter: blur(8px); 
+          transition: all 0.3s ease; 
+        }
+        .slider-controls button:hover { background: rgba(198, 164, 82, 0.15); border-color: #c6a452; color: #dbb856; }
+        
+        /* Text ab image ke uper perfectly center mein */
+        .hero-text { 
+          text-align: center; 
+          margin-bottom: 40px; 
+          animation: textEnter 0.9s 0.2s cubic-bezier(0.16,1,0.3,1) both; 
+          display: flex; 
+          flex-direction: column; 
+          align-items: center; 
+        }
         .hero-text h1 { 
-          font-size: clamp(40px, 7vw, 80px); 
+          width: 100%;
+          font-size: clamp(36px, 6vw, 60px); 
           color: #e8dcc8; 
           letter-spacing: -3px; 
           margin-bottom: 15px; 
           line-height: 1.1; 
+          text-align: center;
         }
         .hero-text h1 em { 
           display: inline-block; 
@@ -86,32 +155,47 @@ const EventsPage = () => {
         }
         .hero-text p { 
           max-width: 600px; 
+          width: 100%;
           margin: 0 auto; 
           color: #7d7768; 
-          font-size: 16px; 
+          font-size: 15px; 
           line-height: 1.7; 
           text-align: center;
         }
 
-        .slider-wrapper { width: 100%; animation: visualEnter 1s 0.3s cubic-bezier(0.16,1,0.3,1) both; }
-        .slider-image-box { position: relative; width: 100%; height: min(650px, 65vw); min-height: 450px; overflow: hidden; border-radius: 25px; background: #1a1610; box-shadow: 0 40px 100px rgba(0,0,0,0.50), 0 0 0 1px rgba(198,164,82,0.08); border: 5px solid rgba(26,22,16,0.95); }
-        .slider-image { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transform: scale(1.05); transition: opacity 1s ease, transform 1.2s ease; }
-        .slider-image.active { opacity: 1; transform: scale(1); }
-        .slider-overlay { position: absolute; inset: 0; background: linear-gradient(0deg, rgba(10,12,16,0.85) 0%, transparent 60%); pointer-events: none; }
-        .slide-caption { position: absolute; left: 40px; bottom: 40px; max-width: 500px; z-index: 2; animation: textEnter 0.9s 0.5s cubic-bezier(0.16,1,0.3,1) both; }
-        .slide-caption span { display: inline-block; color: #c6a452; font-size: 10px; font-weight: 800; letter-spacing: 3px; margin-bottom: 12px; }
-        .slide-caption h3 { font-size: clamp(26px, 3.5vw, 40px); color: #e8dcc8; line-height: 1.1; margin-bottom: 8px; }
-        .slide-caption p { color: rgba(255,255,255,0.7); font-size: 14px; }
-        
-        .slider-controls { position: absolute; right: 25px; bottom: 25px; display: flex; gap: 10px; z-index: 3; }
-        .slider-controls button { width: 45px; height: 45px; border: 1px solid rgba(198, 164, 82, 0.30); border-radius: 8px; background: rgba(14, 17, 23, 0.80); color: #c6a452; font-size: 18px; cursor: pointer; backdrop-filter: blur(8px); transition: all 0.3s ease; }
-        .slider-controls button:hover { background: rgba(198, 164, 82, 0.15); border-color: #c6a452; color: #dbb856; transform: translateY(-2px); }
-        
-        .slider-dots { display: flex; justify-content: center; gap: 9px; margin-top: 22px; }
+        /* Slider Caption (Image niche wala text) */
+        .slide-caption-below {
+          text-align: center;
+          margin-top: 20px;
+          animation: textEnter 0.9s 0.5s cubic-bezier(0.16,1,0.3,1) both;
+          padding-bottom: 30px;
+          border-bottom: 1px solid rgba(198, 164, 82, 0.10);
+          margin-bottom: 60px;
+        }
+        .slide-caption-below span { 
+          display: block; 
+          color: #c6a452; 
+          font-size: 10px; 
+          font-weight: 800; 
+          letter-spacing: 3px; 
+          margin-bottom: 8px; 
+        }
+        .slide-caption-below h3 { 
+          font-size: 22px; 
+          color: #e8dcc8; 
+          line-height: 1.2; 
+          margin-bottom: 6px; 
+        }
+        .slide-caption-below p { 
+          color: #7d7768; 
+          font-size: 14px; 
+        }
+
+        .slider-dots { display: flex; justify-content: center; gap: 9px; margin-top: 15px; }
         .dot { width: 8px; height: 8px; border: none; border-radius: 50%; background: rgba(198, 164, 82, 0.20); cursor: pointer; transition: all 0.3s ease; }
         .dot.active { width: 28px; border-radius: 20px; background: linear-gradient(90deg, #c6a452, #dbb856); }
 
-        .video-section { margin-top: 100px; display: flex; flex-direction: column; align-items: center; animation: textEnter 1s 0.4s cubic-bezier(0.16,1,0.3,1) both; }
+        .video-section { margin-top: 60px; display: flex; flex-direction: column; align-items: center; animation: textEnter 1s 0.4s cubic-bezier(0.16,1,0.3,1) both; }
         .video-label { color: #c6a452; font-size: 10px; font-weight: 800; letter-spacing: 3px; margin-bottom: 15px; }
         .video-title { font-size: clamp(30px, 4vw, 48px); color: #e8dcc8; text-align: center; margin-bottom: 40px; letter-spacing: -1px; }
         
@@ -143,7 +227,11 @@ const EventsPage = () => {
         @keyframes scaleIn { from { transform: scale(0.9); opacity: 0; } to { transform: scale(1); opacity: 1; } }
 
         @media (max-width: 768px) {
-          .slide-caption { left: 25px; bottom: 25px; max-width: 90%; }
+          .slider-wrapper { max-width: 100%; }
+          .slider-controls button { width: 35px; height: 35px; font-size: 14px; }
+          .slide-caption-below h3 { font-size: 20px; }
+          .slide-caption-below p { font-size: 12px; }
+          
           .video-thumbnail-wrapper { height: 250px; }
           .modal-video { height: 250px; }
           .play-button { width: 60px; height: 60px; }
@@ -164,11 +252,13 @@ const EventsPage = () => {
       </header>
 
       <div className="container">
+        {/* 1. Main Text Sabse Uper (Image se upar) */}
         <div className="hero-text">
           <h1>Make Your <em>Events</em> Memorable</h1>
           <p>From school annual days to cultural programs and dance competitions, we provide the perfect costumes to make every performance unforgettable.</p>
         </div>
 
+        {/* 2. Image Text ke Niche */}
         <div className="slider-wrapper">
           <div className="slider-image-box">
             {images.map((image, index) => (
@@ -179,13 +269,6 @@ const EventsPage = () => {
                 className={index === current ? "slider-image active" : "slider-image"}
               />
             ))}
-            <div className="slider-overlay"></div>
-            
-            <div className="slide-caption">
-              <span>GROWTH DRAPERY EVENTS</span>
-              <h3>{images[current].title}</h3>
-              <p>{images[current].subtitle}</p>
-            </div>
 
             <div className="slider-controls">
               <button onClick={prevSlide}>←</button>
@@ -204,6 +287,14 @@ const EventsPage = () => {
           </div>
         </div>
 
+        {/* 3. Slider Caption (Image niche wala text) */}
+        <div className="slide-caption-below">
+          <span>GROWTH DRAPERY EVENTS</span>
+          <h3>{images[current].title}</h3>
+          <p>{images[current].subtitle}</p>
+        </div>
+
+        {/* 4. Video Section */}
         <div className="video-section">
           <span className="video-label">WATCH OUR STORY</span>
           <h2 className="video-title">Experience the <em style={{color: '#c6a452', fontStyle: 'normal'}}>Magic</em></h2>
@@ -218,6 +309,7 @@ const EventsPage = () => {
           </div>
         </div>
 
+        {/* 5. Events Grid */}
         <div className="events-grid">
           <div className="event-card">
             <h4>School Annual Day</h4>

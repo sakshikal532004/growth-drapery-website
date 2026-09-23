@@ -5,11 +5,15 @@ const FancyDress = () => {
   const navigate = useNavigate();
 
   const images = [
-    "/images/fancy-dress/fancy 1.jpeg",
-    "/images/fancy-dress/fancy 2.jpeg",
-    "/images/fancy-dress/fancy 3.jpeg",
-    "/images/fancy-dress/fancy 4.jpeg",
-    "/images/fancy-dress/fancy 5.jpeg",
+    "/images/fancy-dress/fancy 1.png",
+    "/images/fancy-dress/fancy 2.png",
+    "/images/fancy-dress/fancy 3.png",
+    "/images/fancy-dress/fancy 4.png",
+    "/images/fancy-dress/fancy 5.png",
+    "/images/fancy-dress/fancy 6.png",
+    "/images/fancy-dress/fancy 7.png",
+    "/images/fancy-dress/fancy 8.png",
+    "/images/fancy-dress/fancy 9.png"
   ];
 
   const [current, setCurrent] = useState(0);

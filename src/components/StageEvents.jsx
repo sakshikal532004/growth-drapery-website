@@ -5,11 +5,14 @@ const StageEvents = () => {
   const navigate = useNavigate();
 
   const images = [
-    "/images/events/events 1.jpeg",
-    "/images/events/events 2.jpeg",
-    "/images/events/events 3.jpeg",
-    "/images/events/events 4.jpeg",
-    "/images/events/events 5.jpeg",
+    "/images/events/events 1.png",
+    "/images/events/events 2.png",
+    "/images/events/events 3.png",
+    "/images/events/events 4.png",
+    "/images/events/events 5.png",
+    "/images/events/events 6.png",
+    "/images/events/events 7.png",
+    "/images/events/events 8.png"
   ];
 
   const [current, setCurrent] = useState(0);

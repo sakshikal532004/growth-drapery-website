@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 const DanceCompetition = () => {
   const images = [
-    "/images/western/western 1.jpeg",
-    "/images/classical/classical 1.jpeg",
-    "/images/traditional/traditional 1.jpeg",
-    "/images/fancy-dress/fancy 1.jpeg",
-    "/images/events/events 1.jpeg",
+    "/images/western/western 1.png",
+    "/images/classical/classical 1.png",
+    "/images/traditional/traditional 1.png",
+    "/images/fancy-dress/fancy 1.png",
+    "/images/events/events 1.png",
   ];
 
   const captions = [

@@ -5,11 +5,14 @@ const TraditionalFolk = () => {
   const navigate = useNavigate();
 
   const images = [
-    "/images/traditional/traditional 1.jpeg",
-    "/images/traditional/traditional 2.jpeg",
-    "/images/traditional/traditional 3.jpeg",
-    "/images/traditional/traditional 4.jpeg",
-    "/images/traditional/traditional 5.jpeg",
+    "/images/traditional/traditional 1.png",
+    "/images/traditional/traditional 2.png",
+    "/images/traditional/traditional 3.png",
+    "/images/traditional/traditional 4.png",
+    "/images/traditional/traditional 5.png",
+    "/images/traditional/traditional 6.png",
+    "/images/traditional/traditional 7.png"
+
   ];
 
   const [current, setCurrent] = useState(0);

@@ -79,7 +79,7 @@ const SchoolStageSpecialist = () => {
 
               <div className="image-frame">
                 <img
-                  src="/images/events/events 1.jpeg"
+                  src="/images/events/events 3.png"
                   alt="Growth Drapery stage costumes"
                 />
 

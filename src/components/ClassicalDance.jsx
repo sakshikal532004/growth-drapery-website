@@ -5,11 +5,15 @@ const ClassicalDance = () => {
   const navigate = useNavigate();
 
   const images = [
-    "/images/classical/classical 1.jpeg",
-    "/images/classical/classical 2.jpeg",
-    "/images/classical/classical 3.jpeg",
-    "/images/classical/classical 4.jpeg",
-    "/images/classical/classical 5.jpeg",
+    "/images/classical/classical 1.png",
+    "/images/classical/classical 2.png",
+    "/images/classical/classical 3.png",
+    "/images/classical/classical 4.png",
+    "/images/classical/classical 5.png",
+    "/images/classical/classical 6.png",
+    "/images/classical/classical 7.png",
+    "/images/classical/classical 8.png",
+    "/images/classical/classical 9.png",
   ];
 
   const [current, setCurrent] = useState(0);

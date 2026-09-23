@@ -12,7 +12,7 @@ const Collection = () => {
       title: "Classical Dance",
       description:
         "Elegant Bharatanatyam, Kathak and Odissi costumes crafted for grace. Rich fabrics, traditional jewellery and perfect draping for every classical performance.",
-      image: "/images/classical/classical 1.jpeg",
+      image: "/images/classical/classical 1.png",
       path: "/classical-dance",
       number: "01",
       tag: "Most Popular",
@@ -21,7 +21,7 @@ const Collection = () => {
       title: "Western Dance",
       description:
         "Bold and stylish costumes for hip-hop, contemporary and jazz. Designed for energy, comfort and maximum stage impact with vibrant colours.",
-      image: "/images/western/western 1.jpeg",
+      image: "/images/western/western 7.png",
       path: "/western-dance",
       number: "02",
       tag: "Trending",
@@ -30,7 +30,7 @@ const Collection = () => {
       title: "Traditional & Folk",
       description:
         "Celebrate India's diverse culture — Garba, Bhangra, Lavani and more. Authentic costumes that honour every regional tradition beautifully.",
-      image: "/images/traditional/traditional 1.jpeg",
+      image: "/images/traditional/traditional 1.png",
       path: "/traditional-folk",
       number: "03",
       tag: "Cultural",
@@ -39,7 +39,7 @@ const Collection = () => {
       title: "Fancy Dress",
       description:
         "Bring any character to life — freedom fighters, leaders, community helpers and fantasy figures. Creative costumes that win competitions.",
-      image: "/images/fancy-dress/fancy 1.jpeg",
+      image: "/images/fancy-dress/fancy 10.png",
       path: "/fancy-dress",
       number: "04",
       tag: "Kids Favourite",
@@ -48,7 +48,7 @@ const Collection = () => {
       title: "Stage & Events",
       description:
         "Anchor dresses, host outfits, choir gowns and celebration wear. Performance-ready costumes that make every event memorable and special.",
-      image: "/images/events/events 1.jpeg",
+      image: "/images/events/events 7.png",
       path: "/stage-events",
       number: "05",
       tag: "Events",
