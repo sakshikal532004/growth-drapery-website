@@ -11,9 +11,10 @@ const FancyDress = () => {
     "/images/fancy-dress/fancy 4.png",
     "/images/fancy-dress/fancy 5.png",
     "/images/fancy-dress/fancy 6.png",
-    "/images/fancy-dress/fancy 7.png",
     "/images/fancy-dress/fancy 8.png",
-    "/images/fancy-dress/fancy 9.png"
+    "/images/fancy-dress/fancy 9.png",
+    "/images/fancy-dress/fancy 10.png"
+
   ];
 
   const [current, setCurrent] = useState(0);
