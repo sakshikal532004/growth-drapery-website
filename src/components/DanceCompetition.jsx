@@ -394,7 +394,7 @@ const DanceCompetition = () => {
         .dance-page {
           width: 100%;
           min-height: 100vh;
-          background: #edf6f9;
+          background: #edf6f9; /* Light bg (Can be changed to #0e1117 if full dark needed) */
           color: #17384d;
           overflow: hidden;
           font-family: Arial, Helvetica, sans-serif;
@@ -424,7 +424,7 @@ const DanceCompetition = () => {
           align-items: center;
           gap: 10px;
 
-          color: #557789;
+          color: #c6a452; /* Dark Yellow */
           text-decoration: none;
 
           font-size: 12px;
@@ -439,7 +439,7 @@ const DanceCompetition = () => {
         }
 
         .back-link:hover {
-          color: #245d78;
+          color: #dbb856;
         }
 
         .back-link:hover span {
@@ -455,12 +455,12 @@ const DanceCompetition = () => {
           font-weight: 900;
           letter-spacing: 3px;
 
-          color: #245d78;
+          color: #17384d;
         }
 
         .dance-brand span {
           font-weight: 500;
-          color: #7193a2;
+          color: #c6a452; /* Dark Yellow */
         }
 
         .header-enquire {
@@ -468,8 +468,8 @@ const DanceCompetition = () => {
 
           border-radius: 30px;
 
-          background: #245d78;
-          color: white;
+          background: #c6a452; /* Dark Yellow */
+          color: #0e1117;
 
           text-decoration: none;
 
@@ -483,7 +483,7 @@ const DanceCompetition = () => {
 
         .header-enquire:hover {
           transform: translateY(-2px);
-          background: #173f54;
+          background: #dbb856;
         }
 
 
@@ -542,7 +542,7 @@ const DanceCompetition = () => {
 
           margin-bottom: 25px;
 
-          color: #5e8496;
+          color: #c6a452; /* Dark Yellow */
 
           font-size: 11px;
           font-weight: 800;
@@ -552,7 +552,7 @@ const DanceCompetition = () => {
         .small-label span {
           width: 35px;
           height: 1px;
-          background: #719bac;
+          background: #c6a452;
         }
 
         .dance-hero h1 {
@@ -569,7 +569,7 @@ const DanceCompetition = () => {
         .dance-hero h1 em {
           display: block;
 
-          color: #397895;
+          color: #c6a452; /* Dark Yellow */
           font-family: Georgia, serif;
           font-weight: 400;
 
@@ -584,7 +584,8 @@ const DanceCompetition = () => {
           font-size: 16px;
           line-height: 1.8;
 
-          color: #607f8e;
+          color: #e8dcc8; /* Dark White - visible on blue bg */
+          text-shadow: 0 1px 3px rgba(0,0,0,0.3);
         }
 
         .hero-note {
@@ -598,7 +599,7 @@ const DanceCompetition = () => {
           font-weight: 700;
           letter-spacing: 0.5px;
 
-          color: #477489;
+          color: #c6a452; /* Dark Yellow */
         }
 
         .hero-note span {
@@ -613,7 +614,7 @@ const DanceCompetition = () => {
 
           background: rgba(255,255,255,0.65);
 
-          color: #397895;
+          color: #c6a452;
         }
 
         .hero-side-text {
@@ -657,7 +658,7 @@ const DanceCompetition = () => {
           font-weight: 800;
           letter-spacing: 3px;
 
-          color: #6a8d9d;
+          color: #c6a452; /* Dark Yellow */
         }
 
         .slider-top h2 {
@@ -672,7 +673,7 @@ const DanceCompetition = () => {
         }
 
         .slider-top h2 span {
-          color: #397895;
+          color: #c6a452; /* Dark Yellow */
           font-family: Georgia, serif;
           font-weight: 400;
         }
@@ -682,12 +683,12 @@ const DanceCompetition = () => {
           align-items: baseline;
           gap: 8px;
 
-          color: #8ca4af;
+          color: #e8dcc8; /* Dark White */
         }
 
         .slider-counter strong {
           font-size: 32px;
-          color: #245d78;
+          color: #c6a452; /* Dark Yellow */
         }
 
         .slider-counter span {
@@ -785,7 +786,8 @@ const DanceCompetition = () => {
           font-weight: 800;
           letter-spacing: 3px;
 
-          opacity: 0.75;
+          color: #c6a452; /* Dark Yellow */
+          opacity: 1;
         }
 
         .slide-caption h3 {
@@ -797,6 +799,8 @@ const DanceCompetition = () => {
           line-height: 1;
 
           letter-spacing: -2px;
+          
+          color: #e8dcc8; /* Dark White */
         }
 
         .slide-number {
@@ -817,14 +821,14 @@ const DanceCompetition = () => {
           background: rgba(255,255,255,0.17);
           backdrop-filter: blur(10px);
 
-          color: white;
+          color: #c6a452; /* Dark Yellow */
 
           font-size: 12px;
           font-weight: 800;
         }
 
 
-        /* ================= CONTROLS ================= */
+        /* ================= CONTROLS ================= */}
 
         .slider-controls {
           position: absolute;
@@ -843,10 +847,10 @@ const DanceCompetition = () => {
           border: 1px solid rgba(255,255,255,0.35);
           border-radius: 50%;
 
-          background: rgba(255,255,255,0.15);
+          background: rgba(14, 17, 23, 0.6);
           backdrop-filter: blur(12px);
 
-          color: white;
+          color: #c6a452; /* Dark Yellow */
 
           font-size: 19px;
 
@@ -858,7 +862,7 @@ const DanceCompetition = () => {
         }
 
         .slider-controls button:hover {
-          background: rgba(255,255,255,0.30);
+          background: rgba(198, 164, 82, 0.3);
           transform: translateY(-3px);
         }
 
@@ -886,7 +890,7 @@ const DanceCompetition = () => {
         .progress-active {
           height: 100%;
 
-          background: #397895;
+          background: #c6a452; /* Dark Yellow */
 
           transition: width 0.5s ease;
         }
@@ -915,7 +919,7 @@ const DanceCompetition = () => {
         }
 
         .progress-dots button.active-dot {
-          background: #397895;
+          background: #c6a452; /* Dark Yellow */
           transform: scale(1.5);
         }
 
@@ -946,7 +950,7 @@ const DanceCompetition = () => {
         }
 
         .info-heading h2 span {
-          color: #397895;
+          color: #c6a452; /* Dark Yellow */
           font-family: Georgia, serif;
           font-weight: 400;
         }
@@ -963,7 +967,8 @@ const DanceCompetition = () => {
           font-size: 17px;
           line-height: 1.8;
 
-          color: #5f7d8c;
+          color: #e8dcc8; /* Dark White */
+          text-shadow: 0 1px 2px rgba(0,0,0,0.2);
         }
 
         .info-points {
@@ -989,7 +994,7 @@ const DanceCompetition = () => {
         .info-point > span {
           font-size: 10px;
           font-weight: 800;
-          color: #7799a7;
+          color: #c6a452; /* Dark Yellow */
         }
 
         .info-point h3 {
@@ -997,7 +1002,7 @@ const DanceCompetition = () => {
 
           font-size: 18px;
 
-          color: #214b61;
+          color: #17384d;
         }
 
         .info-point p {
@@ -1008,7 +1013,8 @@ const DanceCompetition = () => {
           font-size: 12px;
           line-height: 1.7;
 
-          color: #77919d;
+          color: #e8dcc8; /* Dark White */
+          text-shadow: 0 1px 2px rgba(0,0,0,0.2);
         }
 
 
@@ -1070,7 +1076,7 @@ const DanceCompetition = () => {
         .cta-content h2 span {
           display: block;
 
-          color: #397895;
+          color: #c6a452; /* Dark Yellow */
           font-family: Georgia, serif;
           font-weight: 400;
         }
@@ -1083,7 +1089,8 @@ const DanceCompetition = () => {
           font-size: 14px;
           line-height: 1.8;
 
-          color: #628291;
+          color: #e8dcc8; /* Dark White */
+          text-shadow: 0 1px 2px rgba(0,0,0,0.2);
         }
 
         .dance-cta-button {
@@ -1095,8 +1102,8 @@ const DanceCompetition = () => {
 
           border-radius: 50px;
 
-          background: #245d78;
-          color: white;
+          background: #c6a452; /* Dark Yellow */
+          color: #0e1117;
 
           text-decoration: none;
 
@@ -1104,7 +1111,7 @@ const DanceCompetition = () => {
           font-weight: 700;
 
           box-shadow:
-            0 14px 30px rgba(36, 93, 120, 0.20);
+            0 14px 30px rgba(198, 164, 82, 0.30);
 
           transition:
             transform 0.3s ease,
@@ -1121,7 +1128,7 @@ const DanceCompetition = () => {
 
           border-radius: 50%;
 
-          background: rgba(255,255,255,0.15);
+          background: rgba(14, 17, 23, 0.15);
 
           font-size: 16px;
 
@@ -1130,7 +1137,7 @@ const DanceCompetition = () => {
 
         .dance-cta-button:hover {
           transform: translateY(-4px);
-          background: #173f54;
+          background: #dbb856;
         }
 
         .dance-cta-button:hover span {
@@ -1150,7 +1157,7 @@ const DanceCompetition = () => {
 
           border-top: 1px solid rgba(70, 115, 133, 0.12);
 
-          color: #75909c;
+          color: #c6a452; /* Dark Yellow */
 
           font-size: 11px;
         }
@@ -1159,21 +1166,22 @@ const DanceCompetition = () => {
           font-size: 13px;
           font-weight: 900;
           letter-spacing: 2px;
-          color: #245d78;
+          color: #17384d;
         }
 
         .dance-footer p {
           margin: 0;
+          color: #e8dcc8; /* Dark White */
         }
 
         .dance-footer a {
-          color: #397895;
+          color: #c6a452; /* Dark Yellow */
           text-decoration: none;
           font-weight: 700;
         }
 
         .footer-copy {
-          color: #91a5ae;
+          color: #e8dcc8; /* Dark White */
         }
 
 

@@ -157,7 +157,7 @@ const EventsPage = () => {
           max-width: 600px; 
           width: 100%;
           margin: 0 auto; 
-          color: #7d7768; 
+          color: #e8dcc8; /* Dark White */
           font-size: 15px; 
           line-height: 1.7; 
           text-align: center;
@@ -187,7 +187,7 @@ const EventsPage = () => {
           margin-bottom: 6px; 
         }
         .slide-caption-below p { 
-          color: #7d7768; 
+          color: #e8dcc8; /* Dark White */
           font-size: 14px; 
         }
 
@@ -219,7 +219,7 @@ const EventsPage = () => {
         .event-card { background: rgba(198, 164, 82, 0.05); backdrop-filter: blur(8px); border: 1px solid rgba(198, 164, 82, 0.15); padding: 25px; border-radius: 15px; transition: all 0.3s ease; }
         .event-card:hover { transform: translateY(-5px); border-color: rgba(198, 164, 82, 0.4); background: rgba(198, 164, 82, 0.08); }
         .event-card h4 { color: #dbb856; font-size: 18px; margin-bottom: 8px; }
-        .event-card p { color: #7d7768; font-size: 13px; line-height: 1.6; }
+        .event-card p { color: #e8dcc8; /* Dark White */ font-size: 13px; line-height: 1.6; }
 
         @keyframes textEnter { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: translateY(0); } }
         @keyframes visualEnter { from { opacity: 0; transform: translateX(40px) scale(0.96); } to { opacity: 1; transform: translateX(0) scale(1); } }

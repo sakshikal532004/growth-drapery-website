@@ -178,7 +178,7 @@ const About = () => {
           font-weight: 800;
           letter-spacing: 1.5px;
           text-align: center;
-          color: #8a8478;
+          color: #b3a994; /* Dark White */
         }
 
         /* ================================
@@ -229,7 +229,7 @@ const About = () => {
           margin: 32px 0 18px;
           font-size: 18px;
           line-height: 1.75;
-          color: #9a9486;
+          color: #e8dcc8; /* Dark White */
         }
 
         .about-text {
@@ -237,7 +237,7 @@ const About = () => {
           margin: 0 0 15px;
           font-size: 14px;
           line-height: 1.85;
-          color: #6e6a5e;
+          color: #e8dcc8; /* Dark White */
         }
 
         /* ================================
@@ -278,7 +278,7 @@ const About = () => {
         .about-highlight span {
           font-size: 9px;
           line-height: 1.4;
-          color: #8a8478;
+          color: #b3a994; /* Dark White */
           font-weight: 700;
           letter-spacing: 0.5px;
         }

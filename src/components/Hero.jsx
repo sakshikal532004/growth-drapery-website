@@ -8,9 +8,9 @@ export default function Hero() {
 
   const slides = [
     {
-      image: "/images/homepage.jpeg",
+      image: "/images/traditional/traditional 5.png",
       category: "Featured",
-      title: "Dress Your Dreams On Stage",
+      title: "Rental Costumes",
       subtitle: "Costumes for every story — rental dresses for all performances.",
       accent: "#c6a452",
     },
@@ -31,7 +31,7 @@ export default function Hero() {
     {
       image: "/images/homepage 4.png",
       category: "Stage & Events",
-      title: "Make Your Event Special",
+      title: "Performance Ready",
       subtitle: "Performance-ready costumes for every celebration.",
       accent: "#cf6b6b",
     },
@@ -155,7 +155,7 @@ export default function Hero() {
         .logo:hover .logo-main { color: #fff; }
 
         /* =====================================================
-           NAV LINKS — INNOVATIVE
+           NAV LINKS — Dark Yellow Color
         ===================================================== */
         .nav-links {
           display: flex; align-items: center; gap: 8px; margin-left: auto;
@@ -174,8 +174,9 @@ export default function Hero() {
         .nav-link-item:hover::before { opacity: 1; }
         .nav-link-item a {
           position: relative; z-index: 1;
-          color: #8a8478; text-decoration: none;
-          font-size: 14px; font-weight: 600; letter-spacing: 0.8px;
+          color: #c6a452; /* Dark Yellow (Gold) */
+          text-decoration: none;
+          font-size: 14px; font-weight: 700; letter-spacing: 0.8px;
           transition: color 0.3s ease;
         }
         .nav-link-item:hover a { color: #e8dcc8; }
@@ -240,7 +241,7 @@ export default function Hero() {
         }
 
         /* =====================================================
-           BACKGROUND VIDEO — UNCHANGED
+           BACKGROUND VIDEO
         ===================================================== */
         .hero-background-video {
           position: absolute; top: 0; left: 0;
@@ -333,54 +334,87 @@ export default function Hero() {
            HERO TEXT
         ===================================================== */
         .hero-text { max-width: 590px; }
-        .hero-eyebrow {
-          display: inline-flex; align-items: center; gap: 12px;
+        
+        /* Rental Costumes Premium Block */
+        .rental-block {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          padding: 10px 20px;
           margin-bottom: 28px;
-          color: #c6a452; font-size: 11px; font-weight: 800;
-          letter-spacing: 3.5px; text-transform: uppercase;
+          border-radius: 50px;
+          background: rgba(198, 164, 82, 0.08);
+          border: 1px solid rgba(198, 164, 82, 0.30);
+          backdrop-filter: blur(8px);
+          -webkit-backdrop-filter: blur(8px);
+          color: #dbb856;
+          font-size: 12px;
+          font-weight: 800;
+          letter-spacing: 3.5px;
+          text-transform: uppercase;
+          box-shadow: 0 4px 20px rgba(198, 164, 82, 0.10);
           animation: textEnter 0.8s 0.2s cubic-bezier(0.16,1,0.3,1) both;
         }
-        .hero-eyebrow::before {
-          content: ""; width: 40px; height: 2px;
-          background: linear-gradient(90deg, #c6a452, transparent);
-        }
-        .hero-eyebrow::after {
-          content: ""; width: 6px; height: 6px; border-radius: 50%;
-          background: #c6a452; animation: dotPulse 2s ease-in-out infinite;
+        .rental-dot {
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background: #c6a452;
+          box-shadow: 0 0 10px #c6a452;
+          animation: dotPulse 2s ease-in-out infinite;
         }
 
         /* =====================================================
-           HEADING
+           HEADING - Blur Removed & Font Weight Reduced
         ===================================================== */
         .hero h1 {
           color: #e8dcc8;
           font-size: clamp(56px, 6.2vw, 92px);
-          line-height: 0.95; font-weight: 800; letter-spacing: -3px;
+          line-height: 1; 
+          font-weight: 700; /* Boldness kam kiya (900 se 700) */
+          letter-spacing: -3px;
           margin-bottom: 26px;
+          text-shadow: none; /* Blur hata diya */
           animation: textEnter 0.9s 0.35s cubic-bezier(0.16,1,0.3,1) both;
         }
         .hero h1 span {
-          background: linear-gradient(135deg, #c6a452, #dbb856, #e8c860);
+          background: linear-gradient(135deg, #dbb856, #f0d775, #e8c860);
           -webkit-background-clip: text; -webkit-text-fill-color: transparent;
           background-clip: text;
-          font-family: Georgia, "Times New Roman", serif;
-          font-style: italic; font-weight: 600;
+          font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+          font-style: italic; 
+          font-weight: 600; /* Boldness kam kiya (700 se 600) */
+          letter-spacing: -1px;
         }
 
         /* =====================================================
            DESCRIPTION
         ===================================================== */
         .hero-description {
-          max-width: 480px; color: #7d7768; font-size: 16px;
-          line-height: 1.75; margin-bottom: 32px;
-          animation: textEnter 0.9s 0.5s cubic-bezier(0.16,1,0.3,1) both;
+          max-width: 480px; 
+          font-size: 17px; 
+          font-weight: 500; 
+          line-height: 1.8; 
+          margin-bottom: 45px; 
+          
+          background: linear-gradient(90deg, #ffffff 0%, #c6a452 50%, #ffffff 100%);
+          background-size: 200% auto;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          animation: textEnter 0.9s 0.5s cubic-bezier(0.16,1,0.3,1) both, shimmerText 3.5s linear infinite;
+        }
+        @keyframes shimmerText {
+          to {
+            background-position: 200% center;
+          }
         }
 
         /* =====================================================
            BUTTONS
         ===================================================== */
         .hero-buttons {
-          display: flex; align-items: center; gap: 14px;
+          display: flex; align-items: center; gap: 24px; 
           animation: textEnter 0.9s 0.65s cubic-bezier(0.16,1,0.3,1) both;
         }
         .btn-primary, .btn-secondary {
@@ -430,8 +464,9 @@ export default function Hero() {
           letter-spacing: -0.5px;
         }
         .meta-label {
-          color: #5c574a; font-size: 10px; letter-spacing: 1.2px;
-          text-transform: uppercase; font-weight: 600;
+          color: #c6a452; 
+          font-size: 10px; letter-spacing: 1.2px;
+          text-transform: uppercase; font-weight: 700;
         }
         .meta-divider {
           width: 1px; height: 40px;
@@ -448,7 +483,7 @@ export default function Hero() {
         }
 
         /* =====================================================
-           IMAGE CARD — PAPER FOLD CONTAINER
+           IMAGE CARD
         ===================================================== */
         .image-card-wrapper {
           position: relative;
@@ -458,7 +493,7 @@ export default function Hero() {
         .image-card {
           position: relative; width: 100%; height: 100%;
           overflow: hidden; 
-          border-radius: 24px; /* Changed from 220px 220px 28px 28px to make it square */
+          border-radius: 24px; 
           background: #1a1610;
           box-shadow:
             0 40px 100px rgba(0,0,0,0.50),
@@ -469,7 +504,6 @@ export default function Hero() {
           transition: none;
         }
 
-        /* ---- FOLD PHASES ---- */
         .image-card.fold-folding {
           animation: paperFold 0.6s cubic-bezier(0.6,0,0.4,1) forwards;
         }
@@ -491,10 +525,9 @@ export default function Hero() {
           100% { transform: rotateY(0deg) scale(1); opacity: 1; filter: brightness(1); }
         }
 
-        /* ---- Fold shadow on wrapper ---- */
         .fold-shadow {
           position: absolute; inset: 0;
-          border-radius: 24px; /* Changed to match square */
+          border-radius: 24px; 
           pointer-events: none; z-index: 2;
           transition: opacity 0.4s ease;
         }
@@ -505,7 +538,7 @@ export default function Hero() {
 
         .main-image {
           width: 100%; height: 100%;
-          object-fit: contain; /* Changed from cover to contain so image doesn't cut */
+          object-fit: contain; 
           object-position: center; display: block;
         }
         .image-gradient {
@@ -519,19 +552,23 @@ export default function Hero() {
         }
         .image-category {
           display: inline-block; margin-bottom: 10px;
-          color: #c6a452; font-size: 10px; font-weight: 800;
+          color: #dbb856; 
+          font-size: 10px; font-weight: 800;
           letter-spacing: 3px; text-transform: uppercase;
           padding: 5px 12px; border-radius: 4px;
-          background: rgba(198,164,82,0.10);
-          border: 1px solid rgba(198,164,82,0.20);
+          background: rgba(198,164,82,0.15);
+          border: 1px solid rgba(198,164,82,0.30);
         }
         .image-title {
-          font-size: 30px; line-height: 1.1; font-weight: 700;
+          font-size: 32px; line-height: 1.1; font-weight: 700;
           margin-bottom: 8px; letter-spacing: -0.5px;
+          color: #ffffff;
+          text-shadow: 0 2px 10px rgba(0,0,0,0.5);
         }
         .image-subtitle {
-          max-width: 360px; color: rgba(255,255,255,0.68);
-          font-size: 13px; line-height: 1.6;
+          max-width: 360px; color: rgba(255,255,255,0.85); 
+          font-size: 14px; line-height: 1.6;
+          text-shadow: 0 2px 10px rgba(0,0,0,0.5);
         }
 
         /* =====================================================
@@ -669,9 +706,15 @@ export default function Hero() {
         }
 
         /* =====================================================
-           MOBILE
+           MOBILE OPTIMIZED
         ===================================================== */
         @media (max-width: 750px) {
+          /* Background Heavy Animations Hide kar diye mobile ke liye */
+          .liquid-two, .liquid-three, .wave-one, .wave-two, 
+          .hero-decoration, .hero-decoration-two, .drapery-line {
+            display: none !important; 
+          }
+          
           .navbar-container { padding: 17px 6%; }
           .navbar-scrolled .navbar-container { padding: 12px 6%; }
           .nav-links { display: none; }
@@ -684,13 +727,32 @@ export default function Hero() {
             display: flex; flex-direction: column; gap: 30px;
           }
           .hero-text { width: 100%; max-width: 100%; }
-          .hero-eyebrow { font-size: 9px; letter-spacing: 2px; margin-bottom: 18px; }
-          .hero-eyebrow::before { width: 24px; }
-          .hero h1 {
-            font-size: clamp(40px, 11vw, 58px);
-            line-height: 1; letter-spacing: -2px; margin-bottom: 20px;
+          
+          .rental-block { 
+            font-size: 9px; 
+            letter-spacing: 2px; 
+            padding: 8px 14px; 
+            margin-bottom: 18px;
           }
-          .hero-description { font-size: 14px; line-height: 1.7; margin-bottom: 26px; }
+          
+          .hero h1 {
+            font-size: clamp(38px, 11vw, 52px); /* Font size perfect kiya */
+            line-height: 1.1; 
+            letter-spacing: -2px; 
+            margin-bottom: 20px;
+            text-shadow: none; /* Shadow hata diya clarity ke liye */
+          }
+          
+          /* Description ko solid white aur clear rakha mobile pe */
+          .hero-description { 
+            font-size: 15px; 
+            line-height: 1.7; 
+            margin-bottom: 35px;
+            -webkit-text-fill-color: #ffffff; 
+            background: none;
+            animation: textEnter 0.9s 0.5s cubic-bezier(0.16,1,0.3,1) both;
+          }
+          
           .hero-buttons {
             flex-direction: column; align-items: stretch;
             width: 100%; max-width: 280px;
@@ -701,20 +763,16 @@ export default function Hero() {
           .meta-label { font-size: 9px; }
           .hero-visual { width: 100%; height: 520px; }
           .image-card-wrapper { width: min(84vw, 360px); height: 460px; }
-          .image-card { border-radius: 20px; } /* Changed to match square */
+          .image-card { border-radius: 20px; } 
           .image-info { left: 22px; right: 22px; bottom: 22px; }
-          .image-title { font-size: 22px; }
-          .image-subtitle { font-size: 11px; }
+          .image-title { font-size: 24px; }
+          .image-subtitle { font-size: 12px; }
           .floating-label { top: 30px; right: 2%; font-size: 8px; padding: 10px 14px; }
           .slider-controls { right: 4%; bottom: 28px; }
           .arrow-button { width: 40px; height: 40px; }
           .slider-dots { bottom: -2px; }
           .visual-side-text { display: none; }
-          .hero-decoration { width: 300px; height: 300px; right: -180px; }
-          .liquid-one { width: 330px; height: 330px; left: -170px; }
-          .liquid-two { width: 380px; height: 380px; right: -210px; }
           .hero-background-video { opacity: 0.09; }
-          .drapery-line { display: none; }
         }
 
         @media (max-width: 400px) {
@@ -722,7 +780,7 @@ export default function Hero() {
           .logo-sub { font-size: 7px; }
           .nav-contact { padding: 8px 14px; font-size: 11px; }
           .hero-content { padding-top: 100px; }
-          .hero h1 { font-size: 36px; }
+          .hero h1 { font-size: 34px; }
           .hero-visual { height: 440px; }
           .image-card-wrapper { height: 400px; }
         }
@@ -769,14 +827,17 @@ export default function Hero() {
         <div className="hero-content">
           {/* LEFT */}
           <div className="hero-text">
-            <p className="hero-eyebrow">Rental Costumes & Stage Dresses</p>
+            <div className="rental-block">
+              <span className="rental-dot"></span>
+              Rental Costumes & Stage Dresses
+            </div>
             <h1>
               Dress the<br />
               <span>Moment.</span><br />
               Own the Stage.
             </h1>
             <p className="hero-description">
-              Discover beautiful rental costumes for school functions, dance competitions, cultural programs, fancy dress and special events.
+             Explore stylish rental costumes and stage dresses designed to make every performance shine. ✨
             </p>
             <div className="hero-buttons">
               <a href="#collection" className="btn-primary">Explore Collection</a>

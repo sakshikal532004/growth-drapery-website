@@ -29,7 +29,7 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const text = `Hi Growth Drapery!%0A%0AName: ${formData.name}%0APhone: ${formData.phone}%0AEvent: ${formData.event}%0AMessage: ${formData.message}`;
-    window.open(`https://wa.me/917499419564?text=${text}`, "_blank");
+    window.open(`https://wa.me/917083512250?text=${text}`, "_blank");
     setSubmitted(true);
     setTimeout(() => setSubmitted(false), 4000);
   };
@@ -87,7 +87,7 @@ export default function Contact() {
                 </div>
                 <div className="info-content">
                   <h3>Call Us</h3>
-                  <a href="tel:7499419564">+91 74994 19564</a>
+                  <a href="tel:7083512250">+91 70835 12250</a>
                   <span className="info-sub">Have a question? Give us a call, we’re happy to help!</span>
                 </div>
               </div>
@@ -101,7 +101,7 @@ export default function Contact() {
                 <div className="info-content">
                   <h3>WhatsApp</h3>
                   <a
-                    href="https://wa.me/917499419564?text=Hi%20Growth%20Drapery!%20I%20want%20to%20enquire%20about%20rental%20costumes."
+                    href="https://wa.me/917083512250?text=Hi%20Growth%20Drapery!%20I%20want%20to%20enquire%20about%20rental%20costumes."
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -206,7 +206,7 @@ export default function Contact() {
                   <button type="submit" className="form-submit">
                     Send via WhatsApp
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.05-.669.149-.197.198-.967 1.02-1.182 1.222-.215.202-.43.222-.727.074-.297-.149-1.255-.463-2.39-.918-.888-.388-1.458-.877-1.636-1.082-.215-.222-.024-.346.066-.466.098-.121.215-.222.322-.346.107-.124.215-.248.322-.372.107-.124.143-.198.215-.346.074-.149.037-.273-.074-.372-.107-.099-.967-.918-1*1.327-1.222-.36-.304-.669-.322-.967-.074l-.03.03c-.297.149-.967.867-1.182 1.02-.215.149-.43.222-.727.074-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.05-.669.149-.197.198-.967 1.02-1.182 1.222-.215.202-.43.222-.727.074-.297-.149-1.255-.463-2.39-.918-.888-.388-1.458-.877-1.636-1.082-.215-.222-.024-.346.066-.466.098-.121.215-.222.322-.346.107-.124.215-.248.322-.372.107-.124.143-.198.215-.346.074-.149.037-.273-.074-.372-.107-.099-.967-.918-1.327-1.222-.36-.304-.669-.322-.967-.074z"/>
+                      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.05-.669.149-.197.198-.967 1.02-1.182 1.222-.215.202-.43.222-.727.074-.297-.149-1.255-.463-2.39-.918-.888-.388-1.458-.877-1.636-1.082-.215-.222-.024-.346.066-.466.098-.121.215-.222.322-.346.107-.124.215-.248.322-.372.107-.124.143-.198.215-.346.074-.149.037-.273-.074-.372-.107-.099-.967-.918-1.327-1.222-.36-.304-.669-.322-.967-.074l-.03.03c-.297.149-.967.867-1.182 1.02-.215.149-.43.222-.727.074-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.05-.669.149-.197.198-.967 1.02-1.182 1.222-.215.202-.43.222-.727.074-.297-.149-1.255-.463-2.39-.918-.888-.388-1.458-.877-1.636-1.082-.215-.222-.024-.346.066-.466.098-.121.215-.222.322-.346.107-.124.215-.248.322-.372.107-.124.143-.198.215-.346.074-.149.037-.273-.074-.372-.107-.099-.967-.918-1.327-1.222-.36-.304-.669-.322-.967-.074z"/>
                     </svg>
                   </button>
                 </form>
@@ -264,13 +264,13 @@ export default function Contact() {
         .contact-eyebrow::before { content: ""; width: 26px; height: 1px; background: linear-gradient(90deg, #c6a452, transparent); }
         .contact-head h2 { margin: 0; color: #e8dcc8; font-size: clamp(40px, 4.8vw, 62px); line-height: 1; font-weight: 800; letter-spacing: -2px; }
         .contact-head h2 em { background: linear-gradient(135deg, #c6a452, #dbb856); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-style: normal; }
-        .contact-head > p { max-width: 520px; margin: 12px 0 0; color: #6b6558; font-size: 15px; line-height: 1.8; }
+        .contact-head > p { max-width: 520px; margin: 12px 0 0; color: #e8dcc8; font-size: 15px; line-height: 1.8; }
 
         /* SERVICE TAGS */
         .contact-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 45px; opacity: 0; transform: translateY(18px); transition: all 0.7s 0.15s cubic-bezier(0.16,1,0.3,1); }
         .contact-tags.vis { opacity: 1; transform: translateY(0); }
-        .ctag { padding: 7px 16px; border-radius: 6px;8 border: 1px solid rgba(198,164,82,0.12); background: rgba(198,164,82,0.06); color: #a89870; font-size: 12px; font-weight: 600; letter-spacing: 0.3px; transition: all 0.3s ease; }
-        .ctag:hover { background: rgba(198,164,82,0.12); color: #c6a452; border-color: rgba(198,164,82,0.25); }
+        .ctag { padding: 7px 16px; border-radius: 6px; border: 1px solid rgba(198,164,82,0.12); background: rgba(198,164,82,0.06); color: #e8dcc8; font-size: 12px; font-weight: 600; letter-spacing: 0.3px; transition: all 0.3s ease; }
+        .ctag:hover { background: rgba(198,164,82,0.12); color: #dbb856; border-color: rgba(198,164,82,0.25); }
 
         .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; opacity: 0; transform: translateY(35px); transition: all 0.85s 0.2s cubic-bezier(0.16,1,0.3,1); }
         .contact-grid.vis { opacity: 1; transform: translateY(0); }
@@ -279,30 +279,30 @@ export default function Contact() {
         .contact-info { display: flex; flex-direction: column; gap: 16px; }
         .info-card { display: flex; align-items: flex-start; gap: 16px; padding: 22px; border-radius: 14px; border: 1px solid rgba(198,164,82,0.07); background: rgba(18,16,12,0.40); transition: all 0.35s ease; }
         .info-card:hover { border-color: rgba(198,164,82,0.18); background: rgba(18,16,12,0.55); transform: translateX(4px); }
-        .info-icon { width: 46px; height: 46px; border-radius: 10px; background: rgba(198,164,82,0.08); border: 1px solid rgba(198,164,82,0.12); display: flex; align-items: center; justify-content: center; flex-shrink: 0;: color: #c6a452; }
+        .info-icon { width: 46px; height: 46px; border-radius: 10px; background: rgba(198,164,82,0.08); border: 1px solid rgba(198,164,82,0.12); display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: #c6a452; }
         .info-icon svg { width: 20px; height: 20px; }
         .info-content h3 { margin: 0 0 5px; color: #e8dcc8; font-size: 16px; font-weight: 700; }
         .info-content a { color: #c6a452; text-decoration: none; font-size: 14px; font-weight: 600; transition: color 0.3s ease; display: block; margin-bottom: 3px; }
         .info-content a:hover { color: #dbb856; }
-        .info-address { color: #8a7e6a; font-size: 13px; line-height: 1.6; margin: 0 0 3px; }
-        .info-sub { color: #5c574a; font-size: 11px; letter-spacing: 0.3px; }
+        .info-address { color: #e8dcc8; font-size: 13px; line-height: 1.6; margin: 0 0 3px; }
+        .info-sub { color: #b3a994; font-size: 11px; letter-spacing: 0.3px; }
 
         /* FORM */
         .contact-form-wrap { display: flex; flex-direction: column; }
         .form-card { padding: 34px; border-radius: 16px; border: 1px solid rgba(198,164,82,0.08); background: rgba(18,16,12,0.45); backdrop-filter: blur(8px); }
         .form-card h3 { margin: 0 0 5px; color: #e8dcc8; font-size: 22px; font-weight: 700; }
-        .form-sub { color: #6b6558; font-size: 13px; margin: 0 0 26px; line-height: 1.5; }
+        .form-sub { color: #e8dcc8; font-size: 13px; margin: 0 0 26px; line-height: 1.5; }
         .form-success { padding: 12px 18px; border-radius: 8px; background: rgba(198,164,82,0.10); border: 1px solid rgba(198,164,82,0.20); color: #c6a452; font-size: 13px; font-weight: 600; margin-bottom: 20px; }
 
         .form-group { margin-bottom: 18px; }
-        .form-group label { display: block; color: #8a7e6a; font-size: 11px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; margin-bottom: 7px; }
+        .form-group label { display: block; color: #e8dcc8; font-size: 11px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; margin-bottom: 7px; }
         .form-group input, .form-group select, .form-group textarea {
           width: 100%; padding: 13px 16px; border-radius: 10px;
           border: 1px solid rgba(198,164,82,0.12); background: rgba(10,12,16,0.60);
           color: #e8dcc8; font-size: 14px; font-family: inherit;
           transition: all 0.3s ease; outline: none;
         }
-        .form-group input::placeholder, .form-group textarea::placeholder { color: #4a453a; }
+        .form-group input::placeholder, .form-group textarea::placeholder { color: #9a9486; }
         .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
           border-color: rgba(198,164,82,0.35); background: rgba(10,12,16,0.75);
           box-shadow: 0 0 0 3px rgba(198,164,82,0.06);

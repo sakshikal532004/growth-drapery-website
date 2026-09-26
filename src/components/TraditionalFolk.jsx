@@ -12,7 +12,6 @@ const TraditionalFolk = () => {
     "/images/traditional/traditional 5.png",
     "/images/traditional/traditional 6.png",
     "/images/traditional/traditional 7.png"
-
   ];
 
   const [current, setCurrent] = useState(0);
@@ -250,7 +249,7 @@ const TraditionalFolk = () => {
         .traditional-hero p {
           max-width: 650px;
           margin: 28px 0 0;
-          color: #7d7768;
+          color: #e8dcc8; /* Dark White */
           font-size: 16px;
           line-height: 1.8;
         }
@@ -300,7 +299,7 @@ const TraditionalFolk = () => {
           color: #e8dcc8;
         }
         .counter span { font-size: 28px; font-weight: 900; color: #dbb856; }
-        .counter small { color: #5c574a; font-size: 12px; }
+        .counter small { color: #b3a994; font-size: 12px; } /* Dark White */
 
         /* =========================================
            IMAGE BOX
@@ -309,7 +308,7 @@ const TraditionalFolk = () => {
         .slider-image-box {
           position: relative;
           width: 100%;
-          height: min(680px, 65vw);
+          height: min(680px, 65vw),
           min-height: 480px;
           overflow: hidden;
           border-radius: 25px;
@@ -367,7 +366,7 @@ const TraditionalFolk = () => {
         .slide-caption p {
           margin: 0;
           max-width: 370px;
-          color: rgba(255, 255, 255, 0.68);
+          color: rgba(255, 255, 255, 0.85); /* Dark White */
           font-size: 14px;
           line-height: 1.7;
         }
@@ -461,7 +460,7 @@ const TraditionalFolk = () => {
         .info-text p {
           max-width: 520px;
           margin: 0;
-          color: #7d7768;
+          color: #e8dcc8; /* Dark White */
           font-size: 15px;
           line-height: 1.8;
         }
@@ -496,9 +495,19 @@ const TraditionalFolk = () => {
         }
         .info-point p {
           margin: 0;
-          color: #8a8478;
           font-size: 13px;
           line-height: 1.6;
+          
+          /* Animated Golden/White Shimmer */
+          background: linear-gradient(90deg, #e8dcc8 0%, #c6a452 50%, #e8dcc8 100%);
+          background-size: 200% auto;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          animation: shimmerText 3.5s linear infinite;
+        }
+        @keyframes shimmerText {
+          to { background-position: 200% center; }
         }
 
         /* =========================================
@@ -532,7 +541,7 @@ const TraditionalFolk = () => {
         }
         .booking-content p {
           margin: 0;
-          color: #7d7768;
+          color: #e8dcc8; /* Dark White */
           font-size: 14px;
         }
         .whatsapp-btn {
@@ -589,7 +598,7 @@ const TraditionalFolk = () => {
         }
         .traditional-footer span,
         .traditional-footer p {
-          color: #5c574a;
+          color: #b3a994; /* Dark White (slightly muted for footer) */
           font-size: 11px;
         }
         .traditional-footer p { margin: 0; }

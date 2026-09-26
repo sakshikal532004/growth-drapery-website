@@ -191,13 +191,13 @@ const SchoolStageSpecialist = () => {
           font-size: 12px;
           font-weight: 800;
           letter-spacing: 3px;
-          color: #527b91;
+          color: #c6a452; /* Dark Yellow */
         }
 
         .school-label span {
           width: 38px;
           height: 1px;
-          background: #7ba9bd;
+          background: #c6a452; /* Dark Yellow */
         }
 
         /* Main Layout */
@@ -221,16 +221,16 @@ const SchoolStageSpecialist = () => {
           gap: 12px;
           margin-bottom: 24px;
           padding: 10px 17px;
-          border: 1px solid rgba(62, 117, 143, 0.22);
+          border: 1px solid rgba(198, 164, 82, 0.30); /* Dark Yellow Border */
           border-radius: 50px;
-          background: rgba(255, 255, 255, 0.48);
+          background: rgba(14, 17, 23, 0.4);
           backdrop-filter: blur(10px);
         }
 
         .experience-badge strong {
           font-size: 28px;
           line-height: 1;
-          color: #245d78;
+          color: #c6a452; /* Dark Yellow */
         }
 
         .experience-badge small {
@@ -238,7 +238,7 @@ const SchoolStageSpecialist = () => {
           line-height: 1.3;
           font-weight: 800;
           letter-spacing: 1.5px;
-          color: #66899b;
+          color: #e8dcc8; /* Dark White */
         }
 
         .school-stage-content h2 {
@@ -248,12 +248,12 @@ const SchoolStageSpecialist = () => {
           line-height: 0.98;
           letter-spacing: -3px;
           font-weight: 800;
-          color: #17384d;
+          color: #e8dcc8; /* Dark White */
         }
 
         .school-stage-content h2 span {
           display: block;
-          color: #397895;
+          color: #c6a452; /* Dark Yellow */
         }
 
         .school-intro {
@@ -261,7 +261,8 @@ const SchoolStageSpecialist = () => {
           margin: 32px 0 15px;
           font-size: 18px;
           line-height: 1.75;
-          color: #35586b;
+          color: #e8dcc8; /* Dark White */
+          text-shadow: 0 1px 2px rgba(0,0,0,0.3);
         }
 
         .school-description {
@@ -269,7 +270,8 @@ const SchoolStageSpecialist = () => {
           margin: 0;
           font-size: 14px;
           line-height: 1.8;
-          color: #668393;
+          color: #e8dcc8; /* Dark White */
+          text-shadow: 0 1px 2px rgba(0,0,0,0.3);
         }
 
         /* CTA */
@@ -284,14 +286,14 @@ const SchoolStageSpecialist = () => {
           text-decoration: none;
           border-radius: 50px;
 
-          background: #245d78;
-          color: #ffffff;
+          background: #c6a452; /* Dark Yellow */
+          color: #0e1117;
 
           font-size: 13px;
           font-weight: 700;
           letter-spacing: 0.3px;
 
-          box-shadow: 0 14px 30px rgba(36, 93, 120, 0.22);
+          box-shadow: 0 14px 30px rgba(198, 164, 82, 0.30);
 
           transition:
             transform 0.3s ease,
@@ -307,7 +309,7 @@ const SchoolStageSpecialist = () => {
           justify-content: center;
 
           border-radius: 50%;
-          background: rgba(255, 255, 255, 0.15);
+          background: rgba(14, 17, 23, 0.15);
 
           font-size: 17px;
 
@@ -316,8 +318,8 @@ const SchoolStageSpecialist = () => {
 
         .school-cta:hover {
           transform: translateY(-4px);
-          background: #173f54;
-          box-shadow: 0 18px 35px rgba(36, 93, 120, 0.28);
+          background: #dbb856;
+          box-shadow: 0 18px 35px rgba(198, 164, 82, 0.40);
         }
 
         .school-cta:hover span {
@@ -340,13 +342,14 @@ const SchoolStageSpecialist = () => {
           height: 570px;
           overflow: hidden;
           border-radius: 28px;
-          background: #c7dfe9;
+          background: #1a1610; /* Dark BG */
 
           box-shadow:
-            0 30px 70px rgba(40, 87, 108, 0.20);
+            0 30px 70px rgba(0, 0, 0, 0.50);
 
           transform: rotate(1deg);
           transition: transform 0.5s ease;
+          border: 3px solid rgba(198, 164, 82, 0.15);
         }
 
         .image-frame:hover {
@@ -373,9 +376,9 @@ const SchoolStageSpecialist = () => {
           background:
             linear-gradient(
               to top,
-              rgba(13, 43, 58, 0.72) 0%,
-              rgba(13, 43, 58, 0.10) 48%,
-              rgba(13, 43, 58, 0.02) 100%
+              rgba(10, 12, 16, 0.85) 0%,
+              rgba(10, 12, 16, 0.20) 48%,
+              rgba(10, 12, 16, 0.02) 100%
             );
         }
 
@@ -396,7 +399,8 @@ const SchoolStageSpecialist = () => {
           font-size: 10px;
           font-weight: 800;
           letter-spacing: 3px;
-          opacity: 0.75;
+          color: #c6a452; /* Dark Yellow */
+          opacity: 1;
         }
 
         .image-caption strong {
@@ -404,6 +408,7 @@ const SchoolStageSpecialist = () => {
           font-size: clamp(24px, 3vw, 38px);
           line-height: 1.1;
           letter-spacing: -1px;
+          color: #e8dcc8; /* Dark White */
         }
 
         /* Floating Card */
@@ -420,10 +425,11 @@ const SchoolStageSpecialist = () => {
           padding: 15px 20px;
 
           border-radius: 17px;
-          background: rgba(255, 255, 255, 0.91);
+          background: rgba(14, 17, 23, 0.85); /* Dark Glass */
           backdrop-filter: blur(15px);
+          border: 1px solid rgba(198, 164, 82, 0.20);
 
-          box-shadow: 0 18px 45px rgba(36, 75, 92, 0.16);
+          box-shadow: 0 18px 45px rgba(0, 0, 0, 0.40);
 
           animation: floatingCard 3.5s ease-in-out infinite;
         }
@@ -437,22 +443,22 @@ const SchoolStageSpecialist = () => {
           justify-content: center;
 
           border-radius: 50%;
-          background: #dcecf5;
+          background: rgba(198, 164, 82, 0.15);
 
-          color: #397895;
+          color: #c6a452; /* Dark Yellow */
           font-size: 20px;
         }
 
         .floating-card strong {
           display: block;
           font-size: 13px;
-          color: #234b60;
+          color: #e8dcc8; /* Dark White */
         }
 
         .floating-card p {
           margin: 3px 0 0;
           font-size: 10px;
-          color: #78909d;
+          color: #b3a994; /* Muted Dark White */
         }
 
         @keyframes floatingCard {
@@ -481,10 +487,10 @@ const SchoolStageSpecialist = () => {
 
           padding: 28px;
 
-          border: 1px solid rgba(77, 133, 157, 0.16);
+          border: 1px solid rgba(198, 164, 82, 0.15);
           border-radius: 20px;
 
-          background: rgba(255, 255, 255, 0.52);
+          background: rgba(14, 17, 23, 0.4); /* Dark Glass */
           backdrop-filter: blur(10px);
 
           overflow: hidden;
@@ -497,8 +503,9 @@ const SchoolStageSpecialist = () => {
 
         .highlight-card:hover {
           transform: translateY(-8px);
-          background: rgba(255, 255, 255, 0.80);
-          box-shadow: 0 18px 40px rgba(52, 94, 111, 0.12);
+          background: rgba(14, 17, 23, 0.6);
+          box-shadow: 0 18px 40px rgba(0, 0, 0, 0.30);
+          border-color: rgba(198, 164, 82, 0.30);
         }
 
         .highlight-top {
@@ -512,20 +519,20 @@ const SchoolStageSpecialist = () => {
           font-size: 11px;
           font-weight: 800;
           letter-spacing: 1px;
-          color: #6d94a5;
+          color: #c6a452; /* Dark Yellow */
         }
 
         .highlight-line {
           width: 45px;
           height: 1px;
-          background: #9bbbc8;
+          background: #c6a452; /* Dark Yellow */
         }
 
         .highlight-card h3 {
           margin: 0 0 13px;
           font-size: 21px;
           line-height: 1.2;
-          color: #21485c;
+          color: #e8dcc8; /* Dark White */
         }
 
         .highlight-card p {
@@ -534,7 +541,8 @@ const SchoolStageSpecialist = () => {
 
           font-size: 13px;
           line-height: 1.75;
-          color: #6d8997;
+          color: #e8dcc8; /* Dark White */
+          text-shadow: 0 1px 2px rgba(0,0,0,0.2);
         }
 
         .highlight-arrow {
@@ -550,9 +558,9 @@ const SchoolStageSpecialist = () => {
           justify-content: center;
 
           border-radius: 50%;
-          background: #e1eff5;
+          background: rgba(198, 164, 82, 0.15);
 
-          color: #397895;
+          color: #c6a452; /* Dark Yellow */
           font-size: 15px;
 
           transition:
@@ -562,7 +570,7 @@ const SchoolStageSpecialist = () => {
 
         .highlight-card:hover .highlight-arrow {
           transform: rotate(45deg);
-          background: #cce3ed;
+          background: rgba(198, 164, 82, 0.30);
         }
 
         /* ================================

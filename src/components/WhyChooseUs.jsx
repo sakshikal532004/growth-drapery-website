@@ -283,7 +283,7 @@ export default function WhyChooseUs() {
         .wcu-eyebrow::before { content:""; width:26px; height:1px; background:linear-gradient(90deg,#c6a452,transparent); }
         .wcu-head h2 { margin:0; color:#e8dcc8; font-size:clamp(36px,4.5vw,58px); line-height:1; font-weight:800; letter-spacing:-2px; }
         .wcu-head h2 em { background:linear-gradient(135deg,#c6a452,#dbb856); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; font-style:normal; }
-        .wcu-head > p { max-width:480px; margin:12px 0 0; color:#6b6558; font-size:15px; line-height:1.8; }
+        .wcu-head > p { max-width:480px; margin:12px 0 0; color:#e8dcc8; font-size:15px; line-height:1.8; } /* Dark White */
 
         .wcu-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
 
@@ -308,7 +308,7 @@ export default function WhyChooseUs() {
 
         .wcu-card-inner h3 { margin:0 0 6px; color:#e8dcc8; font-size:17px; font-weight:700; letter-spacing:-0.3px; transition:color 0.3s ease; }
         .wcu-card:hover .wcu-card-inner h3 { color:#dbb856; }
-        .wcu-card-inner p { margin:0; color:#6b6558; font-size:13px; line-height:1.6; }
+        .wcu-card-inner p { margin:0; color:#e8dcc8; font-size:13px; line-height:1.6; } /* Dark White */
 
         .wcu-tap-hint { display:inline-block; margin-top:12px; color:rgba(198,164,82,0.5); font-size:11px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; opacity:0; transform:translateX(-6px); transition:all 0.35s ease; }
         .wcu-card:hover .wcu-tap-hint { opacity:1; transform:translateX(0); color:rgba(198,164,82,0.7); }
@@ -382,7 +382,7 @@ export default function WhyChooseUs() {
           margin:0; color:#dbb856; font-size:20px; font-weight:700; letter-spacing:-0.2px;
         }
         .wcu-slide p {
-          margin:0; color:#9a907a; font-size:15px; line-height:1.75;
+          margin:0; color:#e8dcc8; font-size:15px; line-height:1.75; /* Dark White */
         }
 
         /* ARROWS */
@@ -408,7 +408,7 @@ export default function WhyChooseUs() {
         .wcu-dot.act { background:#c6a452; width:24px; box-shadow:0 0 10px rgba(198,164,82,0.4); }
 
         .wcu-counter {
-          text-align:center; padding:6px 0 24px; color:#4a4639;
+          text-align:center; padding:6px 0 24px; color:#b3a994; /* Muted Dark White */
           font-size:12px; font-weight:600; letter-spacing:1.5px;
         }
 

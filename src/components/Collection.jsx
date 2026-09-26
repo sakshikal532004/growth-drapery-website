@@ -136,11 +136,13 @@ const Collection = () => {
                 Choose Your <em>Look.</em>
               </h2>
             </div>
-            <p>
+            {/* Animated Description Block */}
+            <div className="coll-desc-block">
+              <span className="desc-dot"></span>
               From classical elegance to colourful stage costumes — discover the
               perfect look for every performance, celebration and special
               occasion.
-            </p>
+            </div>
           </div>
 
           {/* ===== CAROUSEL ===== */}
@@ -592,12 +594,36 @@ const Collection = () => {
           background-clip: text;
           font-style: normal;
         }
-        .coll-head > p {
-          max-width: 400px;
-          margin: 0 0 4px;
-          color: #6b6558;
-          font-size: 15px;
-          line-height: 1.8;
+        
+        /* Animated Description Block (Pill) */
+        .coll-desc-block {
+          max-width: 480px;
+          display: inline-flex;
+          align-items: center;
+          gap: 12px;
+          padding: 14px 22px;
+          border-radius: 50px;
+          background: rgba(198, 164, 82, 0.06);
+          border: 1px solid rgba(198, 164, 82, 0.25);
+          backdrop-filter: blur(8px);
+          box-shadow: 0 4px 20px rgba(198, 164, 82, 0.08);
+          color: #e8dcc8; 
+          font-size: 14px;
+          line-height: 1.6;
+          font-weight: 600;
+        }
+        .desc-dot {
+          flex-shrink: 0;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background: #c6a452;
+          box-shadow: 0 0 12px #c6a452;
+          animation: dotPulse 2s ease-in-out infinite;
+        }
+        @keyframes dotPulse {
+          0%, 100% { transform: scale(1); opacity: 1; }
+          50% { transform: scale(0.7); opacity: 0.5; }
         }
 
         /* ===========================================
@@ -758,7 +784,7 @@ const Collection = () => {
           border-radius: 9px;
           background: rgba(198,164,82,0.10);
           backdrop-filter: blur(10px);
-          border: 1px solid rgba<parameter name="198,164,82,0.16);
+          border: 1px solid rgba(198,164,82,0.16);
           color: #c6a452;
           font-size: 17px;
           z-index: 4;
@@ -803,7 +829,7 @@ const Collection = () => {
         .slide-card:hover .slide-body h3 { color: #dbb856; }
         .slide-body > p {
           margin: 0 0 22px;
-          color: #6b6558;
+          color: #e8dcc8; /* Grey se dark white kar diya gaya hai */
           font-size: 14.5px;
           line-height: 1.75;
           max-width: 360px;
@@ -818,7 +844,7 @@ const Collection = () => {
           display: inline-flex;
           align-items: center;
           gap: 7px;
-          color: #8a7e6a;
+          color: #e8dcc8; /* Grey se dark white kar diya gaya hai */
           font-size: 12px;
           font-weight: 600;
         }
@@ -875,7 +901,7 @@ const Collection = () => {
         }
         .coll-dot:hover { border-color: rgba(198,164,82,0.50); }
         .coll-counter {
-          color: #4a453a;
+          color: #e8dcc8; /* Grey se dark white kar diya gaya hai */
           font-size: 12px;
           font-weight: 600;
           letter-spacing: 1px;
@@ -906,7 +932,7 @@ const Collection = () => {
           border-radius: 7px;
           border: 1px solid rgba(198,164,82,0.08);
           background: transparent;
-          color: #5c574a;
+          color: #e8dcc8; /* Grey se dark white kar diya gaya hai */
           font-size: 12px;
           font-weight: 600;
           letter-spacing: 0.3px;
@@ -914,7 +940,7 @@ const Collection = () => {
           transition: all 0.3s ease;
         }
         .coll-tab:hover {
-          color: #a89870;
+          color: #dbb856;
           border-color: rgba(198,164,82,0.18);
           background: rgba(198,164,82,0.03);
         }
@@ -987,10 +1013,10 @@ const Collection = () => {
           .coll-head {
             flex-direction: column;
             align-items: flex-start;
-            gap: 16px;
+            gap: 20px;
             margin-bottom: 38px;
           }
-          .coll-head > p { max-width: 520px; }
+          .coll-desc-block { max-width: 100%; }
           .slide-img-wrap { min-height: 340px; }
           .slide-body { padding: 32px 28px; }
           .slide-body h3 { font-size: 25px; }
@@ -1006,7 +1032,7 @@ const Collection = () => {
           .coll-head { margin-bottom: 30px; }
           .coll-eyebrow { font-size: 9px; letter-spacing: 2px; }
           .coll-head h2 { font-size: 36px; letter-spacing: -1px; }
-          .coll-head > p { font-size: 14px; line-height: 1.7; }
+          .coll-desc-block { font-size: 13px; padding: 12px 18px; }
           .slide-card { grid-template-columns: 1fr; }
           .slide-img-wrap { min-height: 260px; }
           .slide-body { padding: 22px 20px 26px; }
